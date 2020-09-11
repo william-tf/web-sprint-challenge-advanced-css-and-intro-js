@@ -32,10 +32,11 @@ adding tags to your images for screen readers, making sure the semantic tags in 
 
 3. How would you explain the concept of a variable to someone new to programming?
 
-A variable could be set as
+A variable is a placeholder for a value. for example "x" is commonly used in math as a place holder for the number value that you seek to find out.
 
 4. What is the purpose of using functions in code?
 
+they are a small scope of code used to perform specific actions / to cut out repitition
 
 functions help protect a block of code so that whatever process you want to run in it wont be confused with the global scope.
 

@@ -237,14 +237,14 @@ function getArtistByIndex(array, index) {
 
 function get20s(arr){
   let got20s = [];
-  for(let i = 0; arr.length; i++){
-  if(arr[i].years <= 1999 && >= 1900){
+  for(let i = 0; i < arr.length; i++){
+  if(arr[i].years.split(" - ") <= "1999" && arr[i].years.split(" - ") >= "1900"){
     got20s.push(arr[i])
   }
   }
   return got20s;
 }
-get20s();
+console.log(get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -259,9 +259,9 @@ get20s();
 */
 function removeArtist(arr, index) {
   arr.pop(arr[index]);
-  console.log(arr);
+  console.log(arr.length);
   }
-  removeArtist(artists, 0);
+  console.log(removeArtist(artists, 7));
  
 
 /**
@@ -294,15 +294,15 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(arr){
   let lotsArt = [];
-  for(let i = 0; arr.length; i++){
-  if(arr[i].paintings > 100){
-    lotsArt.push(arr[i])
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].paintings > 100){
+      lotsArt.push(arr[i])
   }
   }
   return lotsArt;
 
 }
-lotsOfArt(artists);
+console.log(lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -337,9 +337,9 @@ function getHTML(data){
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+function randomize(arr){
 
-    /* Code here */
+    
 
   }
 
